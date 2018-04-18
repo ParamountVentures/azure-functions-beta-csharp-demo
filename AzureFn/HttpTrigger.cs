@@ -14,7 +14,7 @@ namespace AzureFn
         [FunctionName("HttpTrigger")]
         public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req, TraceWriter log)
         {
-            log.Info("C# HTTP trigger function processed a request.");
+            log.Info("C# HTTP trigger function processed a request from steven.");
 
             string name = req.Query["name"];
 
